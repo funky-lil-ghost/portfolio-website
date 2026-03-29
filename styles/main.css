@@ -24,16 +24,12 @@ h2 {
 	}
 	.mainNav > div > div {
  	 padding: .5em 0 .5em 0;
-   flex-grow: 1;
+   	 flex-grow: 1;
  	 display: flex;
  	 justify-content: center;
 	 background-color: white;
 	 color: black;
-	}
-
-	.second {
-		border-left: 4px solid black;
-		border-right: 4px solid black;
+	 border: 4px solid black;
 	}
 
 	@media (max-width: 600px) {
