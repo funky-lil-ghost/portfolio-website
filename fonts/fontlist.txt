@@ -1,8 +1,0 @@
-Oliver Bright Hand.woff2
-Trt Structa Pro Bold.otf
-Trt Structa Pro Extrabold.otf
-Trt Structa Pro Light.otf
-Trt Structa Pro Medium.otf
-Trt Structa Pro Regular.otf
-Trt Structa Pro Semibold.otf
-Trt Structa Pro Black.otf
