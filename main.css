@@ -1,19 +1,32 @@
 .mainHeader {
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
+	.mainNav {
+ 	 width: 70%
+	}
+	.mainNav > div {
+ 	 display: flex;
+	}
+	.mainNav > div > div {
+ 	 padding: 1em 0 1em 0;
+  	flex-grow: 1;
+ 	 display: flex;
+ 	 justify-content: center;
+	}
 
-.mainNav {
-  width: 100%
-}
+	.first {
+	  background-color: pink;
+	}
+	.second {
+	  background-color: skyblue;
+	}
+	.third {
+	  background-color: lavender;
+	}
 
-.mainHeader > ul {
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  flex-wrap: wrap;
-  padding-left: 0px;
-}
+	@media (max-width: 600px) {
+ 	 .mainNav {
+	    width: 100%
+	  }
+	}
