@@ -1,0 +1,19 @@
+.mainHeader {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.mainNav {
+  width: 100%
+}
+
+.mainHeader > ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
