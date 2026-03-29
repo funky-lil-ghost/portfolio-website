@@ -1,0 +1,50 @@
+/* fonts */
+
+@font-face {
+  font-family: 'pxplus_ibm_vga8regular';
+  src: url(https://funky-lil-ghost.github.io/fonts/IBM_VGA8/pxplus_ibm_vga8-webfont.woff2) format('woff2'),
+    url(https://funky-lil-ghost.github.io/fonts/IBM_VGA8/pxplus_ibm_vga8-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dejavu_sans_monobook';
+  src: url(https://funky-lil-ghost.github.io/fonts/Deja-Vu-Sans/deja_vu_sans_mono-webfont.woff2) format('woff2'),
+    url(https://funky-lil-ghost.github.io/fonts/Deja-Vu-Sans/deja_vu_sans_mono-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* || general || */
+
+.wrapper {
+  margin: 0%;
+  min-width: 100%;
+  width: 100%;
+}
+
+html {
+  background-color: #000000;
+  font-size: 14px;
+  font-family: 'dejavu_sans_monobook', monospace;
+  color: #ffffff;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.content {
+  width: 45%;
+  min-width: 45%;
+  max-width: 45%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: 0 auto;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
