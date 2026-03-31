@@ -84,6 +84,11 @@ a {
   color: transparent;
 }
 
+.currentNav {
+	background-color: var(--black);
+	color: var(--white);
+}
+
 nav > div {
  display: flex;
 }
