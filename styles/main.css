@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-  --black: #1C1D21;
+  --black: #08090a;
   --white: #f6f6f6;
-  --main-font: "Syne Mono", sans-serif;
+  --main-font: "IBM Plex Sans", sans-serif;
 }
 
 html {
