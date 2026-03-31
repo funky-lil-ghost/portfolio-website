@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
 
 :root {
+  --font-color: #f6f6f6;
+  --bg-color: #08090a;
   --main-font: "IBM Plex Sans", sans-serif;
   --alt-font: "Palette Mosaic";
 }
