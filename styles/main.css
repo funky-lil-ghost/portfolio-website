@@ -17,7 +17,7 @@ h2 {
 	font-size: xx-large;
 }
 
-.mainHeader {
+.mainHeader, footer {
   display: flex;
   justify-content: space-around;
   font-size: x-large;
