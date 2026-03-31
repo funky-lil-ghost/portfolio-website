@@ -5,6 +5,7 @@
 :root {
   --black: #08090a;
   --white: #f6f6f6;
+  --alt-bg-1: #156b85;
   --main-font: "IBM Plex Sans", sans-serif;
   --alt-font: "Palette Mosaic";
 }
@@ -63,6 +64,24 @@ p {
 a {
 	font-variant: all-small-caps;
 	font-weight: bold;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+.fnote {
+  font-variant: super;
+  font-weight: normal;
+}
+
+.multicolor {
+  background-image: linear-gradient(to right, aqua, lightgreen, yellow, magenta);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 nav > div {
