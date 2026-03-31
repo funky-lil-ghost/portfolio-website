@@ -38,7 +38,7 @@
             Art | Design | Third Thing
         </h2>
         <p>
-            [<i>Insert silly yet somehow also professional greeting</i>]. My name's Oliver Eulalia Rainwater<a class="fnote link">1</a> and my favorite glyph is the ampersand<a class="fnote link">2</a>. I've got a BA in <span class="alt-font multicolor">Shapes & Colors</span> (aka Visual Communication Design, if we're being technical about it). You can find examples of my work on this site, along with notes about my process for people who like reading. Also, I love making lists. You'll find a bunch of those too. Now, if you'll excuse me, I have to go pet my cat.
+            [<i>Insert silly yet somehow also professional greeting</i>]. My name's Oliver Eulalia Rainwater<a class="fnote link">1</a> and my favorite glyph is the ampersand<a class="fnote link">2</a>. I've got a BA in <span class="alt-font multicolor">Shapes & Colors</span> (aka Visual Communication Design, if we're being technical about it). You can find examples of my work on this site, along with notes about my process for people who like reading. Also, I love making lists. You'll find a bunch of those too.
         </p>
     </div>
 </div>
@@ -47,11 +47,11 @@
     <footer>
         <nav class="footerNav">
 <div>
-  <div class="first">
+  <div>
 		<a>Credits</a></div>
-  <div class="second">
+  <div>
 		<a>Lists</a></div>
-  <div class="third">
+  <div>
 		<a>Silly Mode</a>
   </div>
 </div>
@@ -60,3 +60,48 @@
 
     <script src=""></script>
 </body>
+
+<script>
+  const toggleButton = document.querySelector('.toggle-button');
+  toggleButton.addEventListener('change', toggleTheme, false);
+  const theme = {
+    dark: {
+      '--font-color': '#f6f6f6',
+      '--bg-color': '#08090a',
+    },
+    light: {
+      '--font-color': '#08090a',
+      '--bg-color': '#f6f6f6',
+    }
+  };
+
+  function toggleTheme(e) {
+    if (e.target.checked) {
+      useTheme('light');
+      localStorage.setItem('theme', 'light');
+    } else {
+      useTheme('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+
+  function useTheme(themeChoice) {
+    document.documentElement.style.setProperty(
+      '--font-color',
+      theme\[themeChoice\]['--font-color']
+    );
+    document.documentElement.style.setProperty(
+      '--bg-color',
+      theme\[themeChoice\]['--bg-color']
+    );
+  }
+
+  const preferredTheme = localStorage.getItem('theme');
+  if (preferredTheme === 'dark') {
+    useTheme('dark');
+    toggleButton.checked = true;
+  } else {
+    useTheme('light');
+    toggleButton.checked = false;
+  }
+</script>
