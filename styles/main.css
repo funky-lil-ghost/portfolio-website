@@ -47,6 +47,10 @@ p {
   line-height: 1.3;
 }
 
+a {
+	font-variant: all-small-caps;
+}
+
 nav > div {
  display: flex;
 }
