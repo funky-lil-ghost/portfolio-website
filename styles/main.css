@@ -104,4 +104,5 @@ nav > div > div {
 .alt-font {
   font-family: var(--alt-font);
   word-spacing: -10px;
+  white-space: nowrap;
 }
