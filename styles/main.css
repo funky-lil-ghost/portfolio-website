@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  width: 65%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -26,7 +26,7 @@ body {
 footer {
   position: fixed;
   bottom: 0;
-  width: 65%;
+  width: 70%;
   padding-bottom: 0.7em;
 }
 
@@ -38,7 +38,7 @@ footer {
 
 @media (550px <= width <= 730px) {
  body, footer {
-	width: 80%;
+	width: 85%;
   }
 }
 
