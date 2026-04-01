@@ -119,3 +119,25 @@ nav > div {
   word-spacing: -10px;
   white-space: nowrap;
 }
+
+.anchorOne {
+  anchor-name: --anchorOne;
+}
+
+.nav:hover + .hide {
+  display: block;
+  position: fixed;
+  position-anchor: --anchorOne;
+}
+
+.hide {
+  display: none;
+}
+
+.circle {
+  height: 4em;
+  width: 8em;
+  border: 2px solid aqua;
+  border-radius: 50%;
+  margin-left: 3em;
+}
