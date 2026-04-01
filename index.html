@@ -14,7 +14,6 @@
 <!-- [BODY] -------------------------------->
 <body>
     <!-- [HEADER & NAV] -------------------->
-<input type="checkbox" class="toggle-button"></input>
 	<header class="mainHeader">
         <nav class="mainNav">
 <div>
@@ -59,48 +58,3 @@
         </nav>
     </footer>
 </body>
-
-<script>
-  const toggleButton = document.querySelector('.toggle-button');
-  toggleButton.addEventListener('change', toggleTheme, false);
-  const theme = {
-    dark: {
-      '--font-color': '#f6f6f6',
-      '--bg-color': '#08090a',
-    },
-    light: {
-      '--font-color': '#08090a',
-      '--bg-color': '#f6f6f6',
-    }
-  };
-
-  function toggleTheme(e) {
-    if (e.target.checked) {
-      useTheme('light');
-      localStorage.setItem('theme', 'light');
-    } else {
-      useTheme('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  }
-
-  function useTheme(themeChoice) {
-    document.documentElement.style.setProperty(
-      '--font-color',
-      theme\[themeChoice\]['--font-color']
-    );
-    document.documentElement.style.setProperty(
-      '--bg-color',
-      theme\[themeChoice\]['--bg-color']
-    );
-  }
-
-  const preferredTheme = localStorage.getItem('theme');
-  if (preferredTheme === 'dark') {
-    useTheme('dark');
-    toggleButton.checked = true;
-  } else {
-    useTheme('light');
-    toggleButton.checked = false;
-  }
-</script>
