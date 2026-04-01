@@ -38,7 +38,7 @@ footer {
 
 @media (550px <= width <= 730px) {
  body, footer {
-	width: 85%;
+	width: 80%;
   }
 }
 
