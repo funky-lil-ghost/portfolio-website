@@ -105,7 +105,7 @@ nav > div {
 .nav:hover {
   color: aqua;
   cursor: pointer;
-  background-color: var(--bg-color);
+  background-color: transparent;
 	color: aqua;
 }
 
@@ -132,6 +132,7 @@ nav > div {
 
 .hide {
   display: none;
+  z-index: -1;
 }
 
 .circle {
