@@ -103,15 +103,21 @@ nav > div {
 }
 
 .nav:hover {
-  color: aqua;
   cursor: pointer;
   background-color: transparent;
-	color: aqua;
 }
 
 .currentNav:hover {
   cursor: default;
   color: var(--font-color);
+}
+
+.leftNav:hover {
+	color: aqua;
+}
+
+.rightNav:hover {
+	color: magenta;
 }
 
 .alt-font {
@@ -141,4 +147,11 @@ nav > div {
   border: 2px solid aqua;
   border-radius: 50%;
   margin-left: 3em;
+}
+
+.rectangle {
+  height: 4em;
+  width: 8em;
+  border: 2px solid magenta;
+  margin-right: 3em;
 }
