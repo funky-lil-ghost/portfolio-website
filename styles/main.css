@@ -130,10 +130,29 @@ nav > div {
   anchor-name: --anchorOne;
 }
 
+.anchorTwo {
+  anchor-name: --anchorTwo;
+}
+
+.anchorThree {
+  anchor-name: --anchorThree;
+}
+
 .nav:hover + .hide {
   display: block;
   position: fixed;
+}
+
+.leftNav:hover + .hide {
   position-anchor: --anchorOne;
+}
+
+.centerNav:hover + .hide {
+  position-anchor: --anchorTwo;
+}
+
+.rightNav:hover + .hide {
+  position-anchor: --anchorThree;
 }
 
 .hide {
