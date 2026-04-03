@@ -152,15 +152,15 @@ nav > div {
 	anchor-name: --anchorThree;
 }
 
-.leftNav:hover + .hide {
+.leftNav + .hide {
 	position-anchor: --anchorOne;
 }
 
-.centerNav:hover + .hide {
+.centerNav + .hide {
 	position-anchor: --anchorTwo;
 }
 
-.rightNav:hover + .hide {
+.rightNav + .hide {
 	position-anchor: --anchorThree;
 }
 
