@@ -98,7 +98,7 @@ nav > div {
 }
 
 		.nav:hover {
-			background-color: var(--bg-color);
+			background-color: transparent;
 			color: var(--font-color);
 			cursor: pointer;
 		}
@@ -110,6 +110,7 @@ nav > div {
 }
 
 		.currentNav:hover {
+			background-color: var(--bg-color);
 			cursor: default;
 		}
 
