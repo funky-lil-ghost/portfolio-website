@@ -63,7 +63,7 @@ nav > div {
 }
 
 	@media (max-width: 600px) {
-		nav > div {font-size: 18px} {line-height: 1.1}}
+		nav > div {font-size: 18px; line-height: 1.1}}
 
 /*--------SPECIFIC--------*/
 
