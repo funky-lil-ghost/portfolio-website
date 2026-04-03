@@ -42,6 +42,8 @@ footer {
 a {
 	font-variant: all-small-caps;
 	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
 }
 
 h2 {
