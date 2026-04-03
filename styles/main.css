@@ -171,8 +171,8 @@ nav > div {
 }
 
 .rectangle {
-	height: 67em;
-	width: 80em;
+	height: 67px;
+	width: 80px;
 	margin-left: 16px;
 	border: 2px solid magenta;
 }
