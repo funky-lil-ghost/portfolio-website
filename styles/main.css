@@ -109,6 +109,7 @@ nav > div {
 }
 
 		.currentNav:hover {
+			background-color: var(--bg-color);
 			color: var(--font-color);
 			cursor: default;
 		}
@@ -129,8 +130,7 @@ nav > div {
 .nav:hover + .hide {
 	display: block;
 	position: fixed;
-	inset-block-start: anchor(start);
-	inset-inline-start: anchor(start);
+	justify-self: anchor-center;
 }
 
 /*-------ANCHORS-------*/
@@ -162,16 +162,17 @@ nav > div {
 /*--------SHAPES---------*/
 
 .circle {
-	height: 4em;
-	width: 8em;
+	height: 69px;
+	width: 122px;
+	margin-left: -24px;
+	margin-top: -6px;
 	border: 2px solid aqua;
 	border-radius: 50%;
-	margin-left: 3em;
 }
 
 .rectangle {
-	height: 4em;
-	width: 5em;
+	height: 67em;
+	width: 80em;
+	margin-left: 16px;
 	border: 2px solid magenta;
-	margin-left: -8%;
 }
