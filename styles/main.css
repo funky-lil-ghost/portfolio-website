@@ -60,10 +60,9 @@ p {
 
 nav > div {
 	display: flex;
+	font-size: 18px;
+	line-height: 16px;
 }
-
-	@media (max-width: 600px) {
-		nav > div {font-size: 18px; line-height: 1.1}}
 
 /*--------SPECIFIC--------*/
 
