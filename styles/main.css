@@ -141,6 +141,8 @@ nav > div {
 .nav:hover + .hide {
   display: block;
   position: fixed;
+  inset-block-start: anchor(start);
+  inset-inline-start: anchor(start);
 }
 
 .leftNav:hover + .hide {
@@ -169,8 +171,8 @@ nav > div {
 }
 
 .rectangle {
-  height: 23em;
+  height: 4em;
   width: 5em;
   border: 2px solid magenta;
-  margin-left: 29em;
+  margin-left: -8%;
 }
