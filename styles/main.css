@@ -120,20 +120,6 @@ header {
 	border: var(--border-3);
 }
 
-.img-container:hover,
-#pro .img-container:hover,
-#per .img-container:hover {
-	border: var(--border-2);
-}
-
-.img-container:nth-child(odd):hover {
-	rotate: 13deg;
-}
-
-.img-container:nth-child(even):hover {
-	rotate: -13deg;
-}
-
 .img-caption {
 	position: absolute;
 	top: 50%;
@@ -147,6 +133,20 @@ header {
 	font-weight: bold;
 	font-size: small;
 	z-index: 100;
+}
+
+.img-container:active,
+#pro .img-container:active,
+#per .img-container:active {
+	border: var(--border-2);
+}
+
+.img-container:nth-child(odd):active {
+	rotate: 13deg;
+}
+
+.img-container:nth-child(even):active {
+	rotate: -13deg;
 }
 
 @media (500px <= width) {
@@ -175,5 +175,17 @@ header {
 	}
 	.img-container:nth-child(4) {
 		grid-area: d;
+	}
+
+	.img-container:hover,
+	#pro .img-container:hover,
+	#per .img-container:hover {
+		border: var(--border-2);
+	}
+	.img-container:nth-child(odd):hover {
+		rotate: 13deg;
+	}
+	.img-container:nth-child(even):hover {
+		rotate: -13deg;
 	}
 }
