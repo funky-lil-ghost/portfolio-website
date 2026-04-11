@@ -7,9 +7,9 @@
 	--font-color: #f6f6f6;
 	--bg-color: #000000;
 	--trans-black: rgba(0, 0, 0, 0.722);
-	--accent-1: mediumturquoise;
-	--accent-2: mediumvioletred;
-	--accent-3: yellow;
+	--accent-1: #48d1cc;
+	--accent-2: #c71585;
+	--accent-3: #ffff00;
 	--border-1: 2px solid var(--accent-1);
 	--border-2: 2px solid var(--accent-2);
 	--border-3: 2px solid var(--accent-3);
@@ -60,8 +60,9 @@ a:hover {
 body {
 	display: grid;
 	grid-template-areas: 
-		". h ."
-		". c .";
+		"h h h"
+		"c c c";
+	grid-template-columns: 1fr 5fr 1fr;
 }
 
 header {
@@ -100,9 +101,10 @@ header {
 }
 
 .gallery img {
-	height: 160px;
+	height: 16vh;
 	width: 100%;
 	object-fit: cover;
+	vertical-align: middle;
 }
 
 .img-container {
